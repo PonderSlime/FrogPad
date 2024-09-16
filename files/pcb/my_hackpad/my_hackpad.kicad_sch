@@ -699,23 +699,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -19.05 22.86 0)
+			(property "Reference" "U1"
+				(at -12.7 -22.352 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Seeed Studio XIAO SAMD21"
-				(at -12.7 21.59 0)
+			(property "Value" "Seeed Studio XIAO RP2040"
+				(at -12.7 -24.892 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Seeed Studio XIAO Series Library:XIAO-Generic-Thruhole-14P-2.54-21X17.8MM"
 				(at -8.89 5.08 0)
 				(effects
 					(font
@@ -864,96 +866,6 @@
 						)
 					)
 				)
-				(pin input line
-					(at -2.54 -21.59 90)
-					(length 2.54)
-					(name "5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 -21.59 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 22.86 270)
-					(length 2.54)
-					(name "PA31_SWDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -1.27 22.86 270)
-					(length 2.54)
-					(name "PA30_SWCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 22.86 270)
-					(length 2.54)
-					(name "RESET"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin unspecified line
 					(at -21.59 7.62 0)
 					(length 2.54)
@@ -965,24 +877,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 6.35 22.86 270)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1196,6 +1090,126 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:VCC"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
 					(length 0)
 					(name "~"
 						(effects
@@ -2177,6 +2191,28 @@
 			)
 		)
 	)
+	(global_label "3V3"
+		(shape input)
+		(at 210.82 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d88afb2-a429-4d5d-86cd-803c8dca466c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.3128 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "COL2"
 		(shape input)
 		(at 168.91 87.63 180)
@@ -2487,7 +2523,7 @@
 	)
 	(global_label "ROW2"
 		(shape input)
-		(at 185.42 68.58 90)
+		(at 210.82 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2497,7 +2533,7 @@
 		)
 		(uuid "fd295543-82de-4582-904a-bb30d7ddc54d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.42 60.3334 90)
+			(at 219.0666 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2517,7 +2553,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00b83333-bed4-4026-a508-eca77ce9698a")
-		(property "Reference" "SW15"
+		(property "Reference" "SW16"
 			(at 187.96 36.83 0)
 			(effects
 				(font
@@ -2578,7 +2614,7 @@
 		(instances
 			(project ""
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW15")
+					(reference "SW16")
 					(unit 1)
 				)
 			)
@@ -2594,7 +2630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ab08513-cf7b-4284-b34b-5c928a5a6452")
-		(property "Reference" "SW7"
+		(property "Reference" "SW8"
 			(at 88.9 90.17 0)
 			(effects
 				(font
@@ -2610,7 +2646,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 88.9 97.155 0)
 			(effects
 				(font
@@ -2646,7 +2682,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW7")
+					(reference "SW8")
 					(unit 1)
 				)
 			)
@@ -2662,7 +2698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b77ec5b-22be-4669-82e8-297f19ca176a")
-		(property "Reference" "SW6"
+		(property "Reference" "SW7"
 			(at 69.85 90.17 0)
 			(effects
 				(font
@@ -2678,7 +2714,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 69.85 97.155 0)
 			(effects
 				(font
@@ -2714,7 +2750,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW6")
+					(reference "SW7")
 					(unit 1)
 				)
 			)
@@ -2730,7 +2766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cc4c656-0a1d-462a-bf0d-6db872a61f55")
-		(property "Reference" "SW4"
+		(property "Reference" "SW5"
 			(at 127 73.66 0)
 			(effects
 				(font
@@ -2746,7 +2782,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.50u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 127 80.645 0)
 			(effects
 				(font
@@ -2782,7 +2818,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW4")
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -2816,7 +2852,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 132.08 104.14 0)
 			(effects
 				(font
@@ -2877,6 +2913,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 210.82 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13cbacfc-2757-47b8-b280-79079e60b6c4")
+		(property "Reference" "#PWR02"
+			(at 210.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 210.82 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 210.82 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0e25d3f-b4fd-4a66-bc8f-90203590e4ea")
+		)
+		(instances
+			(project ""
+				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
 		(at 55.88 119.38 90)
 		(unit 1)
@@ -2904,7 +3006,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 55.88 119.38 0)
 			(effects
 				(font
@@ -2992,7 +3094,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 74.93 104.14 0)
 			(effects
 				(font
@@ -3062,7 +3164,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2155361e-a53a-45a7-9f46-642d76aa1238")
-		(property "Reference" "SW3"
+		(property "Reference" "SW4"
 			(at 107.95 73.66 0)
 			(effects
 				(font
@@ -3078,7 +3180,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 107.95 80.645 0)
 			(effects
 				(font
@@ -3114,7 +3216,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW3")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -3214,7 +3316,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 132.08 87.63 0)
 			(effects
 				(font
@@ -3302,7 +3404,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 132.08 119.38 0)
 			(effects
 				(font
@@ -3373,7 +3475,7 @@
 		(fields_autoplaced yes)
 		(uuid "384e616b-df00-4c3e-bcf0-757af667e068")
 		(property "Reference" "U1"
-			(at 195.2341 113.03 0)
+			(at 177.8 113.792 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3382,7 +3484,7 @@
 			)
 		)
 		(property "Value" "Seeed Studio XIAO RP2040"
-			(at 195.2341 115.57 0)
+			(at 177.8 116.332 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3390,7 +3492,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Seeed Studio XIAO Series Library:XIAO-Generic-Thruhole-14P-2.54-21X17.8MM"
 			(at 181.61 86.36 0)
 			(effects
 				(font
@@ -3417,18 +3519,6 @@
 				(hide yes)
 			)
 		)
-		(pin "15"
-			(uuid "b08260a7-09db-4da8-acb1-899c843c3b33")
-		)
-		(pin "17"
-			(uuid "ad492e50-7c43-4d25-a438-1c6ca3e76058")
-		)
-		(pin "19"
-			(uuid "4543ddc3-1e2d-47b5-8463-9e1feec5a74a")
-		)
-		(pin "18"
-			(uuid "96bb9d85-0d11-44eb-89f2-da531c6b183b")
-		)
 		(pin "2"
 			(uuid "7b82e4c3-39d2-48a0-a50e-484062497f43")
 		)
@@ -3444,9 +3534,6 @@
 		(pin "5"
 			(uuid "5e782827-b83f-4294-beb9-00ed2b646493")
 		)
-		(pin "20"
-			(uuid "d19648ef-3ee3-4c4b-bfee-0649b2d236d4")
-		)
 		(pin "6"
 			(uuid "c05327b3-d64a-4897-a7e4-b93174dfd490")
 		)
@@ -3455,9 +3542,6 @@
 		)
 		(pin "3"
 			(uuid "f4530560-f8df-4b13-afa8-3be3f24faba7")
-		)
-		(pin "16"
-			(uuid "4ca54fb3-a521-468d-9d2f-a964d0354590")
 		)
 		(pin "4"
 			(uuid "eadb5ab3-e7f7-4127-8218-96520e86e88f")
@@ -3514,7 +3598,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 113.03 87.63 0)
 			(effects
 				(font
@@ -3602,7 +3686,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 93.98 119.38 0)
 			(effects
 				(font
@@ -3663,6 +3747,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 210.82 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f6f1711-9442-4081-b4b2-35e56b9ea568")
+		(property "Reference" "#PWR03"
+			(at 210.82 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 210.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 210.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bebefd72-2078-452c-8c7a-2717c0538c54")
+		)
+		(instances
+			(project ""
+				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "CherryMX:CherryMX")
 		(at 88.9 113.03 0)
 		(unit 1)
@@ -3672,7 +3822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40d2083a-3136-44bd-9853-20262b3b67ed")
-		(property "Reference" "SW12"
+		(property "Reference" "SW13"
 			(at 88.9 105.41 0)
 			(effects
 				(font
@@ -3688,7 +3838,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 88.9 112.395 0)
 			(effects
 				(font
@@ -3724,7 +3874,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW12")
+					(reference "SW13")
 					(unit 1)
 				)
 			)
@@ -3758,7 +3908,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 93.98 104.14 0)
 			(effects
 				(font
@@ -3846,7 +3996,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 55.88 87.63 0)
 			(effects
 				(font
@@ -3934,7 +4084,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 93.98 87.63 0)
 			(effects
 				(font
@@ -4022,7 +4172,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 74.93 119.38 0)
 			(effects
 				(font
@@ -4092,7 +4242,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88aa236c-3005-4bbe-be3d-52adee867a4b")
-		(property "Reference" "SW11"
+		(property "Reference" "SW12"
 			(at 69.85 105.41 0)
 			(effects
 				(font
@@ -4108,7 +4258,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 69.85 112.395 0)
 			(effects
 				(font
@@ -4144,7 +4294,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW11")
+					(reference "SW12")
 					(unit 1)
 				)
 			)
@@ -4178,7 +4328,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 113.03 119.38 0)
 			(effects
 				(font
@@ -4248,7 +4398,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b485d2e-aa31-4673-9953-7b767d2bfcc2")
-		(property "Reference" "SW1"
+		(property "Reference" "SW2"
 			(at 69.85 73.66 0)
 			(effects
 				(font
@@ -4264,7 +4414,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 69.85 80.645 0)
 			(effects
 				(font
@@ -4300,7 +4450,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW1")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -4316,7 +4466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a537825a-e6cd-4179-8291-f5ef3bfa2cab")
-		(property "Reference" "SW16"
+		(property "Reference" "SW1"
 			(at 50.8 73.66 0)
 			(effects
 				(font
@@ -4332,7 +4482,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 50.8 80.645 0)
 			(effects
 				(font
@@ -4368,7 +4518,7 @@
 		(instances
 			(project ""
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW16")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -4402,7 +4552,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 113.03 104.14 0)
 			(effects
 				(font
@@ -4472,7 +4622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad828941-d7c9-4234-af5b-83f16ba7ed07")
-		(property "Reference" "SW8"
+		(property "Reference" "SW9"
 			(at 107.95 90.17 0)
 			(effects
 				(font
@@ -4488,7 +4638,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 107.95 97.155 0)
 			(effects
 				(font
@@ -4524,7 +4674,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW8")
+					(reference "SW9")
 					(unit 1)
 				)
 			)
@@ -4558,7 +4708,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 55.88 104.14 0)
 			(effects
 				(font
@@ -4628,7 +4778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc8c65b5-c21f-4845-a339-82688d4e0b11")
-		(property "Reference" "SW10"
+		(property "Reference" "SW11"
 			(at 50.8 105.41 0)
 			(effects
 				(font
@@ -4644,7 +4794,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 50.8 112.395 0)
 			(effects
 				(font
@@ -4680,7 +4830,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW10")
+					(reference "SW11")
 					(unit 1)
 				)
 			)
@@ -4696,7 +4846,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c778b0e2-9531-47ab-884c-30d813caa62d")
-		(property "Reference" "SW13"
+		(property "Reference" "SW14"
 			(at 107.95 105.41 0)
 			(effects
 				(font
@@ -4712,7 +4862,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 107.95 112.395 0)
 			(effects
 				(font
@@ -4748,7 +4898,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW13")
+					(reference "SW14")
 					(unit 1)
 				)
 			)
@@ -4764,7 +4914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea1f8b2d-a825-43e4-94e0-d78769a90d7f")
-		(property "Reference" "SW5"
+		(property "Reference" "SW6"
 			(at 50.8 90.17 0)
 			(effects
 				(font
@@ -4780,7 +4930,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 50.8 97.155 0)
 			(effects
 				(font
@@ -4816,7 +4966,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW5")
+					(reference "SW6")
 					(unit 1)
 				)
 			)
@@ -4850,7 +5000,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KP_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 74.93 87.63 0)
 			(effects
 				(font
@@ -4920,7 +5070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6dbb1af-d11a-4f5e-9ee1-721ace6a9d6c")
-		(property "Reference" "SW2"
+		(property "Reference" "SW3"
 			(at 88.9 73.66 0)
 			(effects
 				(font
@@ -4936,7 +5086,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 88.9 80.645 0)
 			(effects
 				(font
@@ -4972,7 +5122,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW2")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -4988,7 +5138,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa126a35-b8f2-4a86-b073-48e44800a2e3")
-		(property "Reference" "SW9"
+		(property "Reference" "SW10"
 			(at 127 90.17 0)
 			(effects
 				(font
@@ -5004,7 +5154,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 127 97.155 0)
 			(effects
 				(font
@@ -5040,7 +5190,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW9")
+					(reference "SW10")
 					(unit 1)
 				)
 			)
@@ -5056,7 +5206,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ffc2af17-1619-4fa6-b048-242a92f7468b")
-		(property "Reference" "SW14"
+		(property "Reference" "SW15"
 			(at 127 105.41 0)
 			(effects
 				(font
@@ -5072,7 +5222,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_4.00u"
+		(property "Footprint" "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
 			(at 127 112.395 0)
 			(effects
 				(font
@@ -5108,7 +5258,7 @@
 		(instances
 			(project "my_hackpad"
 				(path "/b6a1d92c-5d32-4643-aa35-0510497f7eb5"
-					(reference "SW14")
+					(reference "SW15")
 					(unit 1)
 				)
 			)
