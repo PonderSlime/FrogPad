@@ -467,14 +467,14 @@
   "pcbnew": {
     "last_paths": {
       "gencad": "",
-      "idf": "",
+      "idf": "my_hackpad.emn",
       "netlist": "",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
-      "vrml": ""
+      "step": "../../cad/my_hackpad.step",
+      "svg": "../decoration/",
+      "vrml": "my_hackpad.wrl"
     },
     "page_layout_descr_file": ""
   },
