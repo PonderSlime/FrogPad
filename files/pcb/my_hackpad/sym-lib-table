@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "CherryMX")(type "KiCad")(uri "/home/micah/Documents/Hack Club/HackPad/PonderSime-Hackpad/files/pcb/libraries/symbols/CherryMX.kicad_sym")(options "")(descr ""))
-  (lib (name "Seeed_Studio_XIAO_Series")(type "KiCad")(uri "/home/micah/Documents/Hack Club/HackPad/PonderSime-Hackpad/files/pcb/libraries/OPL_Kicad_Library/Seeed Studio XIAO Series Library/Seeed_Studio_XIAO_Series.kicad_sym")(options "")(descr ""))
-)

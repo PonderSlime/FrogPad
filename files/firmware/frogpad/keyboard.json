@@ -3,9 +3,9 @@
     "keyboard_name": "Frogpad",
     "maintainer": "PonderSlime",
     "diode_direction": "COL2ROW",
-    /* "features": {
+    "features": {
         "encoder": true
-    }, */
+    },
     "matrix_pins": {
         "cols": ["D0", "D1", "D2", "D3", "D4"],
         "rows": ["D5", "D6", "D7"]
@@ -17,11 +17,11 @@
         "pid": "0x0108",
         "device_version": "0.0.1"
     },
-    /* "encoder": {
+    "encoder": {
         "rotary": [
-            {"pin_a": "D8", "pin_b": "D10"}
+            {"pin_a": "GP3", "pin_b": "GP4"}
         ]
-    }, */
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [

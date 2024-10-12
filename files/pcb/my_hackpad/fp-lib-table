@@ -1,6 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "Switch_Keyboard_Cherry_MX")(type "KiCad")(uri "/home/micah/Documents/Hack Club/HackPad/PonderSime-Hackpad/files/pcb/libraries/footprints/Switch_Keyboard_Cherry_MX.pretty")(options "")(descr ""))
-  (lib (name "Seeed Studio XIAO Series Library")(type "KiCad")(uri "/home/micah/Documents/Hack Club/HackPad/PonderSime-Hackpad/files/pcb/libraries/OPL_Kicad_Library/Seeed Studio XIAO Series Library.pretty")(options "")(descr ""))
-  (lib (name "freetronics_footprints")(type "KiCad")(uri "/home/micah/Documents/Hack Club/HackPad/PonderSime-Hackpad/files/pcb/libraries/freetronics_footprints.pretty")(options "")(descr ""))
-)
