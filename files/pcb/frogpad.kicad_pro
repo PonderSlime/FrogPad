@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 6.0,
+          "height": 6.0,
+          "width": 6.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -434,7 +434,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "my_hackpad.kicad_pro",
+    "filename": "frogpad.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -469,7 +469,7 @@
       "gencad": "",
       "idf": "my_hackpad.emn",
       "netlist": "",
-      "plot": "",
+      "plot": "export files/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "../../cad/my_hackpad.step",
