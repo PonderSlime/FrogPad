@@ -1,7 +1,17 @@
 # Frogpad
 This is my design for Hack Club's Hackpad Challenge. It features a rotary encoder, 15 switches, and a charming froggy face.
+<details>
+<summary>
 
-# The PCB
+# Details
+</summary>
+<details>
+
+
+<summary>
+
+## The PCB
+</summary>
 The first step in my design was to create the pcb schematic.
 This involved choosing what components to use and how they should be wired to each other. Overall, this was the easiest step in the design process, since
 I am only using 15 switches and 1 rotary encoder.
@@ -14,6 +24,10 @@ XIAO RP2040 several times, to allow it to plug in better. I also modified the th
 I made many mistakes on the way of my project, and several times had to completely rebuild my case design. Although I encountered many setbacks, 
 I still continued on. The hardest thing with designing the pcb was when I was forced to completely restart on the wire traces due to a slight layout change.
 ![frogpad PCB](https://cloud-bz864wfq9-hack-club-bot.vercel.app/0screenshot_from_2024-10-11_14-45-04.png)
+
+</details>
+<details>
+<summary>
 
 ## The Case
 
@@ -88,4 +102,3 @@ OMK was especially difficult due to lack of information on using a RP2040 microc
 | 9 | [ |  | ] |  | 
 | 10 | Esc |  | / |  | 
 | 11 | \ |  | Caps |  | 
-
