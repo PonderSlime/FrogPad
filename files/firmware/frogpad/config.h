@@ -21,6 +21,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 3
 #define MATRIX_COLS 5
 
+/*#define VENDOR_ID 0x2369
+#define PRODUCT_ID 0x4738*/
+
 /*
  * Keyboard Matrix Assignments
  *
@@ -36,8 +39,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define ENCODER_A_PINS { GP2 }
 #define ENCODER_B_PINS { GP3 }
-
 #define DIP_SWITCH_PINS { GP4 }
+
+/*#define WS2812_DI_PIN { GP12 }
+#define RGBLIGHT_LED_COUNT 1
+*/
+#define ENCODER_RESOLUTION 4
 
 #define UNUSED_PINS
 

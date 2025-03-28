@@ -13,13 +13,13 @@
     "processor": "RP2040",
     "bootloader": "rp2040",
     "usb": {
-        "vid": "0x239A",
-        "pid": "0x0108",
+        "vid": "0x2369",
+        "pid": "0x4738",
         "device_version": "0.0.1"
     },
     "encoder": {
         "rotary": [
-            {"pin_a": "GP3", "pin_b": "GP4"}
+            {"pin_a": "GP2", "pin_b": "GP3"}
         ]
     },
     "layouts": {
