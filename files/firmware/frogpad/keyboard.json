@@ -4,11 +4,12 @@
     "maintainer": "PonderSlime",
     "diode_direction": "COL2ROW",
     "features": {
-        "encoder": true
+        "encoder": true,
+        "dip_switch": true
     },
     "matrix_pins": {
-        "cols": ["D0", "D1", "D2", "D3", "D4"],
-        "rows": ["D5", "D6", "D7"]
+        "cols": ["GP26", "GP27", "GP28", "GP29", "GP6"],
+        "rows": ["GP7", "GP0", "GP1"]
     },
     "processor": "RP2040",
     "bootloader": "rp2040",
@@ -20,7 +21,11 @@
     "encoder": {
         "rotary": [
             {"pin_a": "GP2", "pin_b": "GP3"}
-        ]
+        ],
+        "resolution": 4
+    },
+    "dip_switch": {
+        "pins": ["GP4"]
     },
     "layouts": {
         "LAYOUT": {

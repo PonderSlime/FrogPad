@@ -17,36 +17,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-/* key matrix size */
-#define MATRIX_ROWS 3
-#define MATRIX_COLS 5
-
-/*#define VENDOR_ID 0x2369
-#define PRODUCT_ID 0x4738*/
-
-/*
- * Keyboard Matrix Assignments
- *
- * Change this to how you wired your keyboard
- * COLS: AVR pins used for columns, left to right
- * ROWS: AVR pins used for rows, top to bottom
- * DIODE_DIRECTION: COL2ROW = COL = Anode (+), ROW = Cathode (-, marked on diode)
- *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
- *
- */
-#define MATRIX_ROW_PINS { GP7, GP0, GP1 }
-#define MATRIX_COL_PINS { GP26, GP27, GP28, GP29, GP6 }
-
-#define ENCODER_A_PINS { GP2 }
-#define ENCODER_B_PINS { GP3 }
-#define DIP_SWITCH_PINS { GP4 }
-
-/*#define WS2812_DI_PIN { GP12 }
-#define RGBLIGHT_LED_COUNT 1
-*/
-#define ENCODER_RESOLUTION 4
+//#define ENCODER_RESOLUTION 4
 
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
-#define DIODE_DIRECTION COL2ROW
+//#define DIODE_DIRECTION COL2ROW
+#define BOOTMAGIC_ROW 0
+#define BOOTMAGIC_COLUMN 1

@@ -15,14 +15,13 @@
  */
 #include QMK_KEYBOARD_H
 
-
 void process_combo_event(uint16_t combo_index, bool pressed) {
     if (!pressed) {
         switch(combo_index) {
             
         }
     }
-}
+};
 
 /* bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
@@ -43,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_K, KC_L,   KC_M,   KC_N,   KC_O
     ),
     [1] = LAYOUT(
-        KC_TRNS, KC_TRNS,   KC_TRNS,   KC_TRNS,   KC_TRNS, \
+        KC_S, KC_I,   KC_G,   KC_M,   KC_A, \
         KC_TRNS, KC_TRNS,   KC_TRNS,   KC_TRNS,   KC_TRNS,  \
         KC_TRNS, KC_TRNS,   KC_TRNS,   KC_TRNS,   AC_TOGG
     ),
@@ -70,7 +69,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 #if defined(DIP_SWITCH_MAP_ENABLE)
 const uint16_t PROGMEM dip_switch_map[NUM_DIP_SWITCHES][NUM_DIP_STATES] = {
-    DIP_SWITCH_OFF_ON(KC_A, KC_B),
+    DIP_SWITCH_OFF_ON(TO(0), TO(1)),
 };
 #endif
 
